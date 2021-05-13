@@ -63,6 +63,7 @@
 
 .login_github,
 .login_google {
+  height: 4rem;
   font-size: 3.5rem;
   cursor: pointer;
 }
