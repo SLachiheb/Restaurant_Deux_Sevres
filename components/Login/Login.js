@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Alert } from 'react-bootstrap';
 
@@ -59,7 +60,10 @@ const Login = () => {
       <div className={classes.login_container}>
         <div className={classes.login_card}>
           <div className={classes.login_back} onClick={backHandler}>
-            <span>&#8592;</span>
+            <FontAwesomeIcon
+              className={classes.icon_arrow}
+              icon={faArrowLeft}
+            />
           </div>
           <div className={classes.login_body}>
             <h1>Connexion</h1>

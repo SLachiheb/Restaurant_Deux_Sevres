@@ -3,6 +3,8 @@ import { useAuth } from './../../contexts/AuthContext';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { Alert } from 'react-bootstrap';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import classes from './Signup.module.css';
 import BackgroundWrapper from './../../components/BackgroundWrapper/BackgroundWrapper';
@@ -61,7 +63,10 @@ const Signup = () => {
       <div className={classes.signup_container}>
         <div className={classes.signup_card}>
           <div className={classes.signup_back} onClick={backHandler}>
-            <span>&#8592;</span>
+            <FontAwesomeIcon
+              className={classes.icon_arrow}
+              icon={faArrowLeft}
+            />
           </div>
           <div className={classes.signup_body}>
             <h1>Inscription</h1>

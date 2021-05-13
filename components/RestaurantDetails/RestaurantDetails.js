@@ -4,6 +4,7 @@ import {
   faMapMarkerAlt,
   faPhoneVolume,
   faStar,
+  faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Slide } from 'react-slideshow-image';
@@ -53,7 +54,7 @@ const RestaurantDetails = props => {
   return (
     <BackgroundSplit>
       <div className={classes.restaurantDetails_back} onClick={backHandler}>
-        <span>&#8592;</span>
+        <FontAwesomeIcon className={classes.icon_arrow} icon={faArrowLeft} />
       </div>
       <BlurGlass>
         <div className={classes.restaurantDetails_container}>
