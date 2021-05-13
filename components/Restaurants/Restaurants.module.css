@@ -1,0 +1,63 @@
+.restaurant_background {
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(228, 21, 228, 0.288) 0%,
+    rgba(98, 198, 218, 0.575) 90%
+  );
+  background-attachment: fixed;
+}
+
+.restaurants_background_navbar {
+  /* height: 15vh; */
+  padding-top: 3rem;
+}
+
+@media screen and (max-width: 1680px) {
+  .restaurants_background_navbar {
+    padding-top: 5rem;
+  }
+}
+.restaurant_background_card {
+  margin: 0 auto;
+  min-height: 85vh;
+  max-width: 140rem;
+  margin-top: 5rem;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.425);
+  border-top-right-radius: 8rem;
+  border-top-left-radius: 8rem;
+}
+@media screen and (max-width: 1440px) {
+  .restaurant_background_card {
+    margin-top: 5rem;
+    min-height: 85vh; /**/
+    max-width: 140rem; /**/
+    width: 80%; /**/
+  }
+}
+@media screen and (max-width: 1024px) {
+  .restaurant_background_card {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .restaurant_background_card {
+    margin-top: 5rem;
+  }
+}
+
+.noResults {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.noResults p {
+  position: relative;
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: #f27121;
+}

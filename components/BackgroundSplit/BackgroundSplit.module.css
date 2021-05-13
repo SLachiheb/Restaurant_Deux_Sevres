@@ -1,0 +1,15 @@
+.backgroundSplit {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #ece8e8;
+}
+
+.backgroundSplit:before {
+  content: '';
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(325deg, rgba(255, 133, 255, 1) 0%, #62c6da 95%);
+  clip-path: polygon(0 0, 80% 0%, 29% 100%, 0% 100%);
+}

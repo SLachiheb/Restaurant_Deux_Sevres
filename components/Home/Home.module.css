@@ -1,0 +1,301 @@
+.home_background {
+  position: relative;
+  background: rgba(255, 133, 255, 0.459);
+}
+
+.home_background::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 50vh;
+  background: rgba(98, 198, 218, 0.897);
+  transform: skewY(-4deg);
+  transform-origin: left;
+}
+
+.home_container {
+  margin: 0 auto;
+  max-width: 160rem;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100vh;
+  width: 100%;
+}
+
+.home_items__left {
+  position: relative;
+  z-index: 1;
+  flex-basis: 50%;
+}
+
+.home_img_p {
+  position: relative;
+}
+
+.home_items__left h1 {
+  margin-top: 40vh;
+  margin-bottom: 10rem;
+  margin-left: 20rem;
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: white;
+}
+
+.home_items__left h1::before {
+  content: '';
+  position: absolute;
+  top: -25rem;
+  left: 5rem;
+  height: 24rem;
+  width: 21rem;
+  transform: rotate(-15deg);
+  background-image: url(/images/cook.png);
+  background-size: cover;
+}
+
+.home_items__right {
+  position: relative;
+  z-index: 1;
+  flex-basis: 50%;
+
+  display: grid;
+  place-items: center;
+}
+
+.home_container_glass {
+  height: 35rem;
+  width: 50rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(136, 140, 190, 0.404);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transform: rotate(10deg);
+}
+
+/**/
+
+.home_button {
+  position: relative;
+  display: inline-block;
+  margin-left: 20rem;
+  padding: 2rem;
+  width: 25rem;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  color: #420767;
+  background-color: transparent;
+
+  border-radius: 15px;
+  border: 3px solid white;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.home_button:hover {
+  transform: translateY(-10px);
+  color: white;
+}
+
+.home_button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(30rem);
+  transition-duration: 0.5s;
+}
+
+.home_button:hover::before {
+  transform: skewX(45deg) translateX(-30rem);
+}
+
+.home_container_glass img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1440px) {
+  .home_items__left h1 {
+    font-size: 3.5rem;
+  }
+  .home_items__left h1::before {
+    top: -17rem;
+    left: 10rem;
+    height: 16rem;
+    width: 14rem;
+  }
+  .home_container_glass {
+    height: 25rem;
+    width: 40rem;
+  }
+  .home_button {
+    padding: 1.5rem;
+    width: 20rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home_container {
+    flex-flow: column-reverse nowrap;
+  }
+
+  .home_items__left {
+    flex-basis: 50%;
+  }
+
+  .home_items__left h1 {
+    max-width: 65rem;
+    margin-top: 15vh;
+    margin-bottom: 5rem;
+    margin-left: 20rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+  }
+
+  .home_button {
+    margin-left: 20rem;
+    padding: 1rem;
+    width: 18rem;
+    font-size: 2rem;
+  }
+
+  .home_items__right {
+    flex-basis: 50%;
+  }
+
+  .home_container_glass {
+    height: 25rem;
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-height: 1300px) {
+  .home_container {
+    flex-flow: column-reverse nowrap;
+  }
+
+  .home_items__left {
+    flex-basis: 50%;
+  }
+
+  .home_items__left h1 {
+    max-width: 65rem;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  .home_items__left h1::before {
+    top: -21rem;
+    left: 7rem;
+    height: 20rem;
+    width: 18rem;
+  }
+
+  .home_button {
+    margin-left: 20rem;
+    padding: 1rem;
+    width: 22rem;
+    font-size: 3rem;
+  }
+
+  .home_items__right {
+    flex-basis: 50%;
+  }
+
+  .home_container_glass {
+    height: 30rem;
+    width: 45rem;
+  }
+}
+
+@media screen and (max-width: 927px) {
+  .home_container {
+    max-width: 70rem;
+  }
+
+  .home_items__left {
+    flex-basis: 50%;
+  }
+
+  .home_items__left h1 {
+    margin-top: 15vh;
+    margin-bottom: 5rem;
+    margin-left: 10rem;
+    font-size: 3.4rem;
+    font-weight: 700;
+  }
+
+  .home_items__left h1::before {
+    content: '';
+    position: absolute;
+    top: -23rem;
+    left: 25rem;
+    height: 20rem;
+    width: 20rem;
+    transform: rotate(0deg);
+    background-image: url(/images/cook.png);
+  }
+
+  .home_button {
+    margin-left: 10rem;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    padding: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  .home_items__right {
+    flex-basis: 50%;
+  }
+
+  .home_container_glass {
+    height: 28rem;
+    width: 45rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home_items__left h1 {
+    font-size: 3rem;
+  }
+  .home_items__left h1::before {
+    top: -11rem;
+    left: 2rem;
+    height: 11rem;
+    width: 10rem;
+    transform: rotate(-20deg);
+  }
+  .home_container_glass {
+    height: 17rem;
+    width: 30rem;
+  }
+  .home_button {
+    padding: 1rem;
+    width: 15rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-height: 1000px) {
+  .home_container_glass {
+    height: 23rem;
+    width: 38rem;
+  }
+}

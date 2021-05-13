@@ -1,0 +1,73 @@
+.card_hero {
+  cursor: pointer;
+  position: relative;
+  margin: 2rem;
+  height: 30rem;
+  width: 30rem;
+  border-top-left-radius: 5.7rem;
+  border-top-right-radius: 5.7rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 2px 3px 13px rgba(0, 0, 0, 0.479);
+  overflow: hidden;
+}
+@media screen and (max-width: 1440px) {
+  .card_hero {
+    height: 30rem;
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card_hero {
+    height: 25rem;
+    width: 23rem;
+  }
+}
+
+.card_img {
+  height: 100%;
+}
+
+.card_img img {
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.card_body {
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+
+  height: 8rem;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+
+  background: rgba(65, 55, 55, 0.466);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.534);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card_body p {
+  margin: 0;
+  margin-left: 1rem;
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: white;
+}
+@media screen and (max-width: 1280px) {
+  .card_body p {
+    font-size: 1.6rem;
+  }
+}
+.card_rating span {
+  color: #2ecc71;
+  font-weight: 600;
+}

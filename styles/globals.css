@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #00ccbb85;
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 100rem;
+  object-fit: cover;
+}

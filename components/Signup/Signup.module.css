@@ -1,0 +1,143 @@
+.signup_container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.signup_card {
+  padding-top: 5.5rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+  /* height: 60rem; */
+  width: 45rem;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.signup_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 1rem;
+  height: 15%;
+  width: 20%;
+
+  background-color: rgba(255, 255, 255, 0.418);
+}
+
+.signup_back * {
+  cursor: pointer;
+  height: 100%;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(99, 212, 235);
+  display: grid;
+  place-items: center;
+}
+
+.signup_body {
+  position: relative;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.signup_icons {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  border-bottom: 2px solid rgba(245, 239, 239, 0.911);
+}
+
+.signup_icons * {
+  margin: 0 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.signup_github,
+.signup_google {
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+
+.signup_github {
+  flex-basis: 50%;
+  color: #1f1e1e;
+}
+
+.signup_google {
+  flex-basis: 50%;
+  color: #db4a39;
+}
+
+.signup_card h1 {
+  margin-bottom: 4rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+.signup_formGroup {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.signup_card button {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 50%;
+  left: 50%;
+  transform: translateX(50%);
+  border-radius: 4px;
+  border: none;
+  font-size: 1.6rem;
+  color: white;
+  background: rgb(99, 212, 235);
+}
+
+.signup_formGroup label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.signup_formGroup input {
+  padding-left: 1rem;
+  height: 3.5rem;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  font-size: 1.6rem;
+  background-color: rgba(238, 235, 235, 0.945);
+  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.158);
+}
+
+.signup_formGroup input:focus {
+  color: rgba(0, 0, 0, 0.651);
+}
+
+.signup_account {
+  position: relative;
+  width: 80%;
+}
+
+.signup_account {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.signup_account p {
+  display: inline-block;
+  margin-top: 2rem;
+  padding-right: 1rem;
+}
