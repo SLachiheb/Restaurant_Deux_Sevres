@@ -13,7 +13,7 @@
 .restaurantDetails_back * {
   height: 100%;
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: 700;
   color: rgba(235, 99, 224, 0.616);
   display: grid;
   place-items: center;
@@ -49,6 +49,7 @@
 .icon_score {
   display: inline-block;
   font-size: 2.5rem;
+  height: 2.5rem;
   color: rgba(255, 133, 255, 0.596);
   margin-right: 2rem;
 }
@@ -248,9 +249,8 @@
   .icon_location,
   .icon_phone,
   .icon_score {
-    display: inline-block;
     font-size: 2rem;
-    color: rgba(255, 133, 255, 0.596);
+    height: 2rem;
     margin-right: 2rem;
   }
 
@@ -276,6 +276,129 @@
 
   .feedback {
     padding: 1rem;
+  }
+}
+
+@media screen and (max-height: 1000px) {
+  /*********************/
+
+  .description_scroll {
+    height: 10rem;
+  }
+
+  .rating {
+    height: 11rem;
+  }
+
+  .rating > label {
+    width: 3rem;
+  }
+
+  .emojiWrapper {
+    height: 80px;
+  }
+
+  .emoji > svg {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .rating_1:checked ~ .emojiWrapper > .emoji {
+    transform: translateY(-73px);
+  }
+  .rating_2:checked ~ .emojiWrapper > .emoji {
+    transform: translateY(-147px);
+  }
+  .rating_3:checked ~ .emojiWrapper > .emoji {
+    transform: translateY(-223px);
+  }
+  .rating_4:checked ~ .emojiWrapper > .emoji {
+    transform: translateY(-300px);
+  }
+  .rating_5:checked ~ .emojiWrapper > .emoji {
+    transform: translateY(-373px);
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-height: 1000px) {
+  .restaurantDetails_back {
+    height: 7rem;
+    width: 7rem;
+  }
+  .restaurantDetails_back * {
+    font-size: 4rem;
+  }
+  .restaurantDetails_item__left {
+    height: 70%;
+    padding: 3rem 3rem;
+  }
+  .restaurantDetails_item__right {
+    height: 30%;
+  }
+
+  .restaurantDetails_name {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .restaurantDetails_location,
+  .restaurantDetails_contact,
+  .restaurantDetails_score {
+    margin-bottom: 2rem;
+  }
+
+  .icon_location,
+  .icon_phone,
+  .icon_score {
+    display: inline-block;
+    font-size: 3rem;
+    height: 3rem;
+    color: rgba(255, 133, 255, 0.596);
+    margin-right: 2rem;
+  }
+
+  .address,
+  .restaurantDetails_contact p,
+  .description,
+  .score {
+    font-size: 1.7rem;
+  }
+
+  .description_scroll {
+    height: 11rem;
+  }
+
+  .rating {
+    height: 11rem;
+  }
+
+  .rating > label {
+    width: 4rem;
+  }
+
+  .emojiWrapper {
+    height: 80px;
+  }
+
+  .emoji > svg {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .rating_1:checked ~ .emojiWrapper > .emoji {
+    transform: translateY(-73px);
+  }
+  .rating_2:checked ~ .emojiWrapper > .emoji {
+    transform: translateY(-147px);
+  }
+  .rating_3:checked ~ .emojiWrapper > .emoji {
+    transform: translateY(-223px);
+  }
+  .rating_4:checked ~ .emojiWrapper > .emoji {
+    transform: translateY(-300px);
+  }
+  .rating_5:checked ~ .emojiWrapper > .emoji {
+    transform: translateY(-373px);
   }
 }
 
@@ -307,9 +430,8 @@
   .icon_location,
   .icon_phone,
   .icon_score {
-    display: inline-block;
     font-size: 1.5rem;
-    color: rgba(255, 133, 255, 0.596);
+    height: 1.5rem;
     margin-right: 2rem;
   }
 
@@ -384,6 +506,7 @@
   .icon_location,
   .icon_phone,
   .icon_score {
+    height: 1.8rem;
     font-size: 1.8rem;
   }
 
@@ -431,6 +554,7 @@
   .icon_score {
     display: inline-block;
     font-size: 3rem;
+    height: 3rem;
     color: rgba(255, 133, 255, 0.596);
     margin-right: 2rem;
   }
@@ -514,6 +638,7 @@
   .icon_score {
     display: inline-block;
     font-size: 1.5rem;
+    height: 1.5rem;
     color: rgba(255, 133, 255, 0.596);
     margin-right: 2rem;
   }
@@ -595,6 +720,7 @@
   .icon_score {
     display: inline-block;
     font-size: 1.8rem;
+    height: 1.8rem;
     color: rgba(255, 133, 255, 0.596);
     margin-right: 2rem;
   }

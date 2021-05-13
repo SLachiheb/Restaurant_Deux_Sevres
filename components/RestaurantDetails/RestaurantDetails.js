@@ -429,14 +429,8 @@ const RestaurantDetails = props => {
               </div>
             </div>
           </div>
-          {/* <div className={classes.restaurantDetails_item__right}>
-            <img
-              src={props.restaurant.images[0]}
-              alt={`${props.restaurant.name}`}
-            ></img>
-          </div> */}
           <div className={classes.restaurantDetails_item__right}>
-            <Slide autoplay={true}>
+            <Slide autoplay={true} duration={3000} transitionDuration={1500}>
               {props.restaurant.images.map((img, index) => {
                 return (
                   <div className='each-slide' key={index}>
