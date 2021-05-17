@@ -14,6 +14,7 @@
   right: 14%;
   top: 50%;
   font-size: 1.6rem;
+  height: 1.6rem;
   transform: translatey(-50%);
   color: rgba(0, 0, 0, 0.342);
   transition: all 0.2s ease;
