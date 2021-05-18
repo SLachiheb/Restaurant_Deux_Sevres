@@ -32,4 +32,4 @@ yarn dev
 
 ## Deploy on Vercel
 
-Web site : [Lien de la plateforme web](https://restaurant-deux-sevres.vercel.app/)
+Web site : [Link](https://restaurant-deux-sevres.vercel.app/)
